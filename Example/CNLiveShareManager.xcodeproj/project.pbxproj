@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* CNLiveAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* CNLiveAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* CNLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* CNLiveViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		8172C5432376665C00238255 /* NSDictionary+CNSafeObjectForKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C52B2376665C00238255 /* NSDictionary+CNSafeObjectForKey.m */; };
+		8172C5452376665C00238255 /* CNLiveShareCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C5302376665C00238255 /* CNLiveShareCustomButton.m */; };
+		8172C5462376665C00238255 /* CNLiveShareTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8172C5312376665C00238255 /* CNLiveShareTool.bundle */; };
+		8172C5472376665C00238255 /* CNLiveShareFuncView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C5322376665C00238255 /* CNLiveShareFuncView.m */; };
+		8172C5482376665C00238255 /* CNLiveShareToolDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8172C5332376665C00238255 /* CNLiveShareToolDataSource.plist */; };
+		8172C5492376665C00238255 /* CNLiveShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C5342376665C00238255 /* CNLiveShareManager.m */; };
+		8172C54A2376665C00238255 /* CNLiveShareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C5352376665C00238255 /* CNLiveShareHelper.m */; };
+		8172C54B2376665C00238255 /* CNLiveShareRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C5382376665C00238255 /* CNLiveShareRequestHandler.m */; };
+		8172C54C2376665C00238255 /* CNLiveShareExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C53B2376665C00238255 /* CNLiveShareExtension.m */; };
+		8172C54D2376665C00238255 /* CNLiveShareImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C53C2376665C00238255 /* CNLiveShareImageManager.m */; };
+		8172C54E2376665C00238255 /* SendMessageToWXReq+CNLiveShareWXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C53D2376665C00238255 /* SendMessageToWXReq+CNLiveShareWXRequest.m */; };
+		8172C5502376665C00238255 /* WXMediaMessage+CNLiveShareWXMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C5402376665C00238255 /* WXMediaMessage+CNLiveShareWXMessage.m */; };
+		8172C5532376681700238255 /* NSString+CNLiveShareExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172C5522376681700238255 /* NSString+CNLiveShareExtension.m */; };
+		8172C5552376822700238255 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8172C5542376822600238255 /* TencentOpenAPI.framework */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A8A8098090E62C315BE979F0 /* Pods_CNLiveShareManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E7025E47B77DFB52EAD2FB /* Pods_CNLiveShareManager_Tests.framework */; };
+		E6B623E6DBD87E5E38984805 /* Pods_CNLiveShareManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5021509521ED852C427B12E /* Pods_CNLiveShareManager_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = CNLiveShareManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6003F58A195388D20070C39A /* CNLiveShareManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNLiveShareManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* CNLiveShareManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CNLiveShareManager-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* CNLiveShareManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CNLiveShareManager-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* CNLiveAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNLiveAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* CNLiveAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNLiveAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* CNLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNLiveViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* CNLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNLiveViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* CNLiveShareManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNLiveShareManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		65EB353910E42CA2AB1C2450 /* Pods-CNLiveShareManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNLiveShareManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CNLiveShareManager_Tests/Pods-CNLiveShareManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		670068855D2A98302CA3F8AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7608C83A9860872AF7FA4A75 /* Pods-CNLiveShareManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNLiveShareManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CNLiveShareManager_Example/Pods-CNLiveShareManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7E32378BDA30DD07F73133F6 /* CNLiveShareManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CNLiveShareManager.podspec; path = ../CNLiveShareManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8172C5292376665C00238255 /* CNLiveShareFuncView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareFuncView.h; sourceTree = "<group>"; };
+		8172C52A2376665C00238255 /* CNLiveShareCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareCustomButton.h; sourceTree = "<group>"; };
+		8172C52B2376665C00238255 /* NSDictionary+CNSafeObjectForKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CNSafeObjectForKey.m"; sourceTree = "<group>"; };
+		8172C52C2376665C00238255 /* CNLiveShareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareHelper.h; sourceTree = "<group>"; };
+		8172C52D2376665C00238255 /* CNLiveShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareManager.h; sourceTree = "<group>"; };
+		8172C52E2376665C00238255 /* CNLiveShareToolDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareToolDefine.h; sourceTree = "<group>"; };
+		8172C5302376665C00238255 /* CNLiveShareCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveShareCustomButton.m; sourceTree = "<group>"; };
+		8172C5312376665C00238255 /* CNLiveShareTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CNLiveShareTool.bundle; sourceTree = "<group>"; };
+		8172C5322376665C00238255 /* CNLiveShareFuncView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveShareFuncView.m; sourceTree = "<group>"; };
+		8172C5332376665C00238255 /* CNLiveShareToolDataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CNLiveShareToolDataSource.plist; sourceTree = "<group>"; };
+		8172C5342376665C00238255 /* CNLiveShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveShareManager.m; sourceTree = "<group>"; };
+		8172C5352376665C00238255 /* CNLiveShareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveShareHelper.m; sourceTree = "<group>"; };
+		8172C5362376665C00238255 /* NSDictionary+CNSafeObjectForKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CNSafeObjectForKey.h"; sourceTree = "<group>"; };
+		8172C5382376665C00238255 /* CNLiveShareRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveShareRequestHandler.m; sourceTree = "<group>"; };
+		8172C5392376665C00238255 /* SendMessageToWXReq+CNLiveShareWXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+CNLiveShareWXRequest.h"; sourceTree = "<group>"; };
+		8172C53A2376665C00238255 /* WXMediaMessage+CNLiveShareWXMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+CNLiveShareWXMessage.h"; sourceTree = "<group>"; };
+		8172C53B2376665C00238255 /* CNLiveShareExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveShareExtension.m; sourceTree = "<group>"; };
+		8172C53C2376665C00238255 /* CNLiveShareImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNLiveShareImageManager.m; sourceTree = "<group>"; };
+		8172C53D2376665C00238255 /* SendMessageToWXReq+CNLiveShareWXRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+CNLiveShareWXRequest.m"; sourceTree = "<group>"; };
+		8172C53E2376665C00238255 /* CNLiveShareRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareRequestHandler.h; sourceTree = "<group>"; };
+		8172C5402376665C00238255 /* WXMediaMessage+CNLiveShareWXMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+CNLiveShareWXMessage.m"; sourceTree = "<group>"; };
+		8172C5412376665C00238255 /* CNLiveShareImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareImageManager.h; sourceTree = "<group>"; };
+		8172C5422376665C00238255 /* CNLiveShareExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNLiveShareExtension.h; sourceTree = "<group>"; };
+		8172C5512376681700238255 /* NSString+CNLiveShareExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CNLiveShareExtension.h"; sourceTree = "<group>"; };
+		8172C5522376681700238255 /* NSString+CNLiveShareExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CNLiveShareExtension.m"; sourceTree = "<group>"; };
+		8172C5542376822600238255 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A92E85D36A1F09A15047F5A3 /* Pods-CNLiveShareManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNLiveShareManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CNLiveShareManager_Example/Pods-CNLiveShareManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B3E7025E47B77DFB52EAD2FB /* Pods_CNLiveShareManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNLiveShareManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5021509521ED852C427B12E /* Pods_CNLiveShareManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNLiveShareManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4320A58016020A65DDEC18 /* Pods-CNLiveShareManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNLiveShareManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CNLiveShareManager_Tests/Pods-CNLiveShareManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EF8526811E6E3FB154FBA1C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8172C5552376822700238255 /* TencentOpenAPI.framework in Frameworks */,
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				E6B623E6DBD87E5E38984805 /* Pods_CNLiveShareManager_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				A8A8098090E62C315BE979F0 /* Pods_CNLiveShareManager_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for CNLiveShareManager */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				FE83AA630FD99C60E2564059 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* CNLiveShareManager_Example.app */,
+				6003F5AE195388D20070C39A /* CNLiveShareManager_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				B5021509521ED852C427B12E /* Pods_CNLiveShareManager_Example.framework */,
+				B3E7025E47B77DFB52EAD2FB /* Pods_CNLiveShareManager_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for CNLiveShareManager */ = {
+			isa = PBXGroup;
+			children = (
+				8172C5542376822600238255 /* TencentOpenAPI.framework */,
+				8172C5282376665C00238255 /* Classes */,
+				6003F59C195388D20070C39A /* CNLiveAppDelegate.h */,
+				6003F59D195388D20070C39A /* CNLiveAppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A5195388D20070C39A /* CNLiveViewController.h */,
+				6003F5A6195388D20070C39A /* CNLiveViewController.m */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for CNLiveShareManager";
+			path = CNLiveShareManager;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* CNLiveShareManager-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* CNLiveShareManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				7E32378BDA30DD07F73133F6 /* CNLiveShareManager.podspec */,
+				EF8526811E6E3FB154FBA1C8 /* README.md */,
+				670068855D2A98302CA3F8AF /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8172C5282376665C00238255 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8172C52A2376665C00238255 /* CNLiveShareCustomButton.h */,
+				8172C5302376665C00238255 /* CNLiveShareCustomButton.m */,
+				8172C52C2376665C00238255 /* CNLiveShareHelper.h */,
+				8172C52D2376665C00238255 /* CNLiveShareManager.h */,
+				8172C5342376665C00238255 /* CNLiveShareManager.m */,
+				8172C5292376665C00238255 /* CNLiveShareFuncView.h */,
+				8172C5322376665C00238255 /* CNLiveShareFuncView.m */,
+				8172C52E2376665C00238255 /* CNLiveShareToolDefine.h */,
+				8172C5312376665C00238255 /* CNLiveShareTool.bundle */,
+				8172C5332376665C00238255 /* CNLiveShareToolDataSource.plist */,
+				8172C5352376665C00238255 /* CNLiveShareHelper.m */,
+				8172C5362376665C00238255 /* NSDictionary+CNSafeObjectForKey.h */,
+				8172C52B2376665C00238255 /* NSDictionary+CNSafeObjectForKey.m */,
+				8172C5372376665C00238255 /* CNLiveShareHelper */,
+				8172C5512376681700238255 /* NSString+CNLiveShareExtension.h */,
+				8172C5522376681700238255 /* NSString+CNLiveShareExtension.m */,
+			);
+			name = Classes;
+			path = ../../CNLiveShareManager/Classes;
+			sourceTree = "<group>";
+		};
+		8172C5372376665C00238255 /* CNLiveShareHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8172C5382376665C00238255 /* CNLiveShareRequestHandler.m */,
+				8172C5392376665C00238255 /* SendMessageToWXReq+CNLiveShareWXRequest.h */,
+				8172C53A2376665C00238255 /* WXMediaMessage+CNLiveShareWXMessage.h */,
+				8172C53B2376665C00238255 /* CNLiveShareExtension.m */,
+				8172C53C2376665C00238255 /* CNLiveShareImageManager.m */,
+				8172C53D2376665C00238255 /* SendMessageToWXReq+CNLiveShareWXRequest.m */,
+				8172C53E2376665C00238255 /* CNLiveShareRequestHandler.h */,
+				8172C5402376665C00238255 /* WXMediaMessage+CNLiveShareWXMessage.m */,
+				8172C5412376665C00238255 /* CNLiveShareImageManager.h */,
+				8172C5422376665C00238255 /* CNLiveShareExtension.h */,
+			);
+			path = CNLiveShareHelper;
+			sourceTree = "<group>";
+		};
+		FE83AA630FD99C60E2564059 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7608C83A9860872AF7FA4A75 /* Pods-CNLiveShareManager_Example.debug.xcconfig */,
+				A92E85D36A1F09A15047F5A3 /* Pods-CNLiveShareManager_Example.release.xcconfig */,
+				65EB353910E42CA2AB1C2450 /* Pods-CNLiveShareManager_Tests.debug.xcconfig */,
+				DA4320A58016020A65DDEC18 /* Pods-CNLiveShareManager_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* CNLiveShareManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CNLiveShareManager_Example" */;
+			buildPhases = (
+				0A4743B2BE76E4EEE0E365A9 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				D4F8D7F44EE67F0A1C20D4EC /* [CP] Copy Pods Resources */,
+				81994C4821BFDD05001DEF79 /* ShellScript */,
+				FAF9A1129A9829FFEEBA498B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CNLiveShareManager_Example;
+			productName = CNLiveShareManager;
+			productReference = 6003F58A195388D20070C39A /* CNLiveShareManager_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* CNLiveShareManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CNLiveShareManager_Tests" */;
+			buildPhases = (
+				7836A229FB9CB7FD03ACE1DC /* [CP] Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = CNLiveShareManager_Tests;
+			productName = CNLiveShareManagerTests;
+			productReference = 6003F5AE195388D20070C39A /* CNLiveShareManager_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CNLive;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = woshiliushiyu;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 94X49GG3ZW;
+					};
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "CNLiveShareManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* CNLiveShareManager_Example */,
+				6003F5AD195388D20070C39A /* CNLiveShareManager_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				8172C5462376665C00238255 /* CNLiveShareTool.bundle in Resources */,
+				8172C5482376665C00238255 /* CNLiveShareToolDataSource.plist in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A4743B2BE76E4EEE0E365A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CNLiveShareManager_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7836A229FB9CB7FD03ACE1DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CNLiveShareManager_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81994C4821BFDD05001DEF79 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"${ACTION}\" = \"build\" ]\nthen\nINSTALL_DIR=${SRCROOT}/Products/${PROJECT_NAME}.framework\n\nDEVICE_DIR=${SRCROOT}/\"build\"/Debug-iphoneos/${PROJECT_NAME}/${PROJECT_NAME}.framework \n\nSIMULATOR_DIR=${SRCROOT}/\"build\"/Debug-iphonesimulator/${PROJECT_NAME}/${PROJECT_NAME}.framework \n\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\nlipo -create \"${DEVICE_DIR}/${PROJECT_NAME}\" \"${SIMULATOR_DIR}/${PROJECT_NAME}\" -output \"${INSTALL_DIR}/${PROJECT_NAME}\"\n\n#open \"${SRCROOT}/Products\"\nfi\n";
+		};
+		D4F8D7F44EE67F0A1C20D4EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CNLiveShareManager_Example/Pods-CNLiveShareManager_Example-resources.sh",
+				"${PODS_ROOT}/WeiboSDK/libWeiboSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CNLiveShareManager_Example/Pods-CNLiveShareManager_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF9A1129A9829FFEEBA498B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CNLiveShareManager_Example/Pods-CNLiveShareManager_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CNLiveCommonCategory/CNLiveCommonCategory.framework",
+				"${BUILT_PRODUCTS_DIR}/CNLiveEnvironment/CNLiveEnvironment.framework",
+				"${BUILT_PRODUCTS_DIR}/CNLiveRequestBastKit/CNLiveRequestBastKit.framework",
+				"${BUILT_PRODUCTS_DIR}/CNLiveTripartiteManagement/CNLiveTripartiteManagement.framework",
+				"${BUILT_PRODUCTS_DIR}/CNLiveUserManagement/CNLiveUserManagement.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNLiveCommonCategory.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNLiveEnvironment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNLiveRequestBastKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNLiveTripartiteManagement.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CNLiveUserManagement.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CNLiveShareManager_Example/Pods-CNLiveShareManager_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8172C54E2376665C00238255 /* SendMessageToWXReq+CNLiveShareWXRequest.m in Sources */,
+				8172C5452376665C00238255 /* CNLiveShareCustomButton.m in Sources */,
+				6003F59E195388D20070C39A /* CNLiveAppDelegate.m in Sources */,
+				8172C54C2376665C00238255 /* CNLiveShareExtension.m in Sources */,
+				8172C54B2376665C00238255 /* CNLiveShareRequestHandler.m in Sources */,
+				8172C54A2376665C00238255 /* CNLiveShareHelper.m in Sources */,
+				8172C5502376665C00238255 /* WXMediaMessage+CNLiveShareWXMessage.m in Sources */,
+				8172C5492376665C00238255 /* CNLiveShareManager.m in Sources */,
+				8172C5532376681700238255 /* NSString+CNLiveShareExtension.m in Sources */,
+				6003F5A7195388D20070C39A /* CNLiveViewController.m in Sources */,
+				8172C5472376665C00238255 /* CNLiveShareFuncView.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				8172C54D2376665C00238255 /* CNLiveShareImageManager.m in Sources */,
+				8172C5432376665C00238255 /* NSDictionary+CNSafeObjectForKey.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* CNLiveShareManager_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7608C83A9860872AF7FA4A75 /* Pods-CNLiveShareManager_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_ASSET_PATHS = CNLiveShareManager/TencentOpenAPI.framework;
+				DEVELOPMENT_TEAM = 94X49GG3ZW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CNLiveShareManager",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CNLiveShareManager/CNLiveShareManager-Prefix.pch";
+				INFOPLIST_FILE = "CNLiveShareManager/CNLiveShareManager-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92E85D36A1F09A15047F5A3 /* Pods-CNLiveShareManager_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_ASSET_PATHS = CNLiveShareManager/TencentOpenAPI.framework;
+				DEVELOPMENT_TEAM = 94X49GG3ZW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CNLiveShareManager",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CNLiveShareManager/CNLiveShareManager-Prefix.pch";
+				INFOPLIST_FILE = "CNLiveShareManager/CNLiveShareManager-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EB353910E42CA2AB1C2450 /* Pods-CNLiveShareManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CNLiveShareManager_Example.app/CNLiveShareManager_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA4320A58016020A65DDEC18 /* Pods-CNLiveShareManager_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CNLiveShareManager_Example.app/CNLiveShareManager_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "CNLiveShareManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CNLiveShareManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CNLiveShareManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

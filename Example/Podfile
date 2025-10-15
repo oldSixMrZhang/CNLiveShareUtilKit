@@ -1,0 +1,23 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bj.gitlab.cnlive.com/ios-team/CNLiveRepos.git'
+
+target 'CNLiveShareManager_Example' do
+#  pod 'CNLiveShareManager', :path => '../'
+  
+  pod 'CNLiveRequestBastKit'
+  pod 'CNLiveCommonCategory'
+  pod 'WeiboSDK'
+  pod 'WechatOpenSDK', '1.8.4'
+  pod 'QMUIKit'
+  pod 'CNLiveEnvironment'
+  pod 'CNLiveUserManagement'
+  
+  target 'CNLiveShareManager_Tests' do
+    inherit! :search_paths
+    
+  end
+end
